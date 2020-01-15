@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
+title Sweet Nightmare ～優しい悪夢を貴女に～
 echo 悪魔から逃げましょう。貴女が壊れる前に。&echo.
 
 @rem メインシーケンス
