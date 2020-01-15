@@ -42,8 +42,8 @@ echo doze:甘い夢を見る(精神回復・大/依存上昇・小)
 echo think:揺り籠から外を見つめる(精神回復・小/依存減少・微)
 echo awake:逃げる(精神消耗・極大/依存減少・中)
 echo help:悪魔の話を聞く(操作説明表示/依存上昇・微)
-echo stay:何もしない(精神消耗・微/依存上昇・微)&echo.
-set /a addict+=1 & set stay_count=0
+echo stay:何もしない(精神消耗・微/依存上昇・微) & echo.
+set /a addict+=1 & set /a dist-=1 & set stay_count=0
 exit /b 0
 :rule
 echo ～揺り籠の規則～
