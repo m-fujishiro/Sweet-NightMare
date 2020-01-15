@@ -1,4 +1,4 @@
-@echo off
+@rem echo off
 setlocal enabledelayedexpansion
 
 title Sweet Nightmare `—D‚µ‚¢ˆ«–²‚ğ‹M—‚É`
@@ -11,21 +11,20 @@ call :help
 
 set /p user=""
 echo %user%
-pause
 
 set is_true=false
-
 if %user% == doze (set is_true=true)
 if %user% == think (set is_true=true)
 if %user% == awake  (set is_true=true)
 if %user% == help (set is_true=true)
-if %is_true% == true (call :%user%)
-else call :stay
+if %is_true% == true (call :%user%) else (call :stay) 
+
 for /f "delims=," %%a IN (%errorlevel%) do(
   set san=%%a
   set addict=%%b
   set dist=%%c
 )
+
 echo san=%san%, addict=%addict%, dist=%dist%
 pause
 exit /b 0
