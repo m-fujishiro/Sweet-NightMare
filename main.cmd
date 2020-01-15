@@ -19,12 +19,6 @@ if %user% == awake  (set is_true=true)
 if %user% == help (set is_true=true)
 if %is_true% == true (call :%user%) else (call :stay) 
 
-for /f "delims=," %%a IN (%errorlevel%) do(
-  set san=%%a
-  set addict=%%b
-  set dist=%%c
-)
-
 echo san=%san%, addict=%addict%, dist=%dist%
 pause
 exit /b 0
@@ -49,5 +43,6 @@ echo その6：――たとえ君が逃げても、また戻って来るまでずっと待ってるよ。&echo.
 exit /b 0
 
 :stay
-set /a rtn1=san-1 & set /a rtn2=addict+1 & set /a rtn3=dist-1
-exit /b %rtn1%,%rtn2%,%rtn3%
+echo 貴女はただ無為に過ごした。
+set /a san=san-1 & set /a addict=addict+1 & set /a dist=dist-1
+exit /b 0
