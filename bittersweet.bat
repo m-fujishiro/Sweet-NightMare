@@ -28,5 +28,5 @@ if %addict% gtr 0 (
   echo …うん。これで、よかったの。 & pause > nul
   echo これが、私の決めた道。私が私として歩む道。 &  pause > nul & echo.
 )
-echo ～Bitter End～ & echo. & pause
+echo ～BitterSweet End～ & echo. & pause
 exit

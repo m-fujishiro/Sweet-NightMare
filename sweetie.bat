@@ -18,6 +18,6 @@ echo ‹M—‚ÍA—h‚èâÄ‚Ì’†B & pause > nul
 echo ‚ä‚ç‚ä‚ç‚ÆA—h‚ç‚ê‘±‚¯‚éB & pause > nul
 echo ‚¢‚Â‚Ü‚Å‚àA‚¢‚Â‚Ü‚Å‚àB & pause > nul & echo.
 
-echo `Š®‘S–³Œ‡‚ÌHappy End` & echo. & pause
+echo `Happy End` & echo. & pause
 
 exit

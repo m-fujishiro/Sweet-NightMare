@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 @title Sweet Nightmare `—D‚µ‚¢ˆ«–²‚ğ‹M—‚É`
 
-@rem cls & echo.
+cls & echo.
 
 echo ƒGƒ“ƒhFSweet(—D‚µ‚³) & echo.
 
@@ -24,5 +24,5 @@ echo ˆ«–‚‚ÆŒÄ‚Î‚ê‚½‚»‚Ìl‚ÍAœˆ¤‚ÌS‚Å‹M—‚ğŒ©‚Â‚ß‚éB & pause > nul
 echo ‚»‚Á‚ÆA‹M—‚ğŒ©ç‚Á‚Ä‚¢‚éB & pause > nul
 echo ‹M—‚ªŒ³‹C‚É‚È‚é‚»‚Ì‚Ü‚Å\\B & pause > nul & echo.
 
-echo `‚±‚ê‚àˆêí‚ÌAHappy End...` & echo. & pause
+echo `Merry Bad End.` & echo. & pause
 exit
