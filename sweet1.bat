@@ -7,8 +7,8 @@ cls & echo.
 
 echo エンド：Sweet(麻薬) & echo.
 
-echo つらい。たすけて。 & pause > nul
-echo わたしがわるかったの。 & pause > nul
+echo つらい。ねぇ、たすけて。 & pause > nul
+echo …わたしがわるかったの。ごめんなさい。 & pause > nul
 echo すき。 & pause > nul
 echo. & pause > nul
 echo ほんとよ？あなたのこと、あいしてる。 & pause > nul

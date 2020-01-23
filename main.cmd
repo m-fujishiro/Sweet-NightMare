@@ -108,7 +108,7 @@ if %errorlevel% == 2 (
 echo "…辛くなったら戻っておいで。――ずーっと、待ってるよ。"
 set /a san-=50+addict & set /a addict-=10 & set /a dist+=10
 if %san% gtr 9 (
- choice /m 戻りますか？ & echo.
+ choice /m …戻りますか？ & echo.
 ) else (
  goto rtn 
  exit /b 0 
@@ -121,6 +121,7 @@ if %errorlevel% == 1 (
 @rem 無事に逃げられたENDを呼び出す
 call bittersweet.bat
 @rem 戻ってきたら、戻ってきたということ。――おかえり。
+echo "――おかえり。ゆっくり休んでね。"
 call :rtn2
 exit /b 0
 

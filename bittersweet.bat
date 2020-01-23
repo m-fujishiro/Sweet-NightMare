@@ -17,7 +17,7 @@ echo …。 & pause > nul & echo.
 if %addict% gtr 0 (
   echo …やっぱり、耐えられない…。 & pause > nul
   echo 貴女の足が悪魔の元へ向かう。 & pause > nul & echo.
-  echo …で、でも…流石に…。逃げちゃったから…もうダメかも…？どうしよう…。 & pause > nul & echo.
+  echo …でも、約束を破ったのに…今更戻るなんて…。 & pause > nul & echo.
   echo "どうしたの？大丈夫、ここまでおいで。" & pause > nul
   echo. & pause > nul
   echo "――おかえり。" & pause > nul & echo.
