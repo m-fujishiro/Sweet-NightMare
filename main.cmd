@@ -34,7 +34,7 @@ if %dist% geq 10 ( call :creep )
 if %addict% geq 100 ( call sweet1.bat )
 if %san% leq 0 ( call sweet2.bat )
 if %stay_count% geq 10 (call sweetie.bat)
-call :main
+goto main
 
 :help
 call :rule
@@ -68,7 +68,6 @@ exit /b 0
 
 :doze
 echo 甘い夢に溺れる。揺蕩う意識の中、悪魔の声が聞こえた気がした。 & echo.
-:doze2
 set /a san+=10 & set /a addict+=10+dist & set dist=0 & set /a stay_count+=1
 exit /b 0
 
@@ -85,11 +84,11 @@ set /a san-=10+addict & set /a addict-=10 & set /a dist+=5 & set stay_count=0
 if %san% gtr 0 (
  choice /m 逃げますか？ & echo.
 ) else (
- :call rtn
+ goto rtn
  exit /b 0 
 )
 if %errorlevel% == 2 (
- :call rtn
+ goto rtn
  exit /b 0 
 ) 
 
@@ -98,11 +97,11 @@ set /a san-=30+addict & set /a addict-=10 & set /a dist+=8
 if %san% gtr 5 (
  choice /m 逃げますか？ & echo.
 ) else (
- :call rtn
+ goto rtn
  exit /b 0 
 )
 if %errorlevel% == 2 (
- :call rtn
+ goto rtn
  exit /b 0 
 ) 
 
@@ -111,11 +110,11 @@ set /a san-=50+addict & set /a addict-=10 & set /a dist+=10
 if %san% gtr 9 (
  choice /m 戻りますか？ & echo.
 ) else (
- :call rtn 
+ goto rtn 
  exit /b 0 
 )
 if %errorlevel% == 1 (
- :call rtn 
+ goto rtn 
  exit /b 0 
 ) 
 
@@ -127,9 +126,9 @@ exit /b 0
 
 :rtn
 echo 貴女の足が止まる。もう、動けない。――動きたくない。
-echo "そう、それでいいんだよ。"
+echo "そう、それでいいんだよ。" & echo.
 :rtn2
-echo 甘い夢に溺れる。もう、動きたくない。
-call :doze2
+echo 甘い夢に溺れる。もう、動きたくない。 & pause > nul & echo.
+set /a san+=10 & set /a addict+=10+dist & set dist=0 & set /a stay_count+=1
 if %san% lss 30 ( call :rtn2 )
-exit /b 0 
+goto main 
